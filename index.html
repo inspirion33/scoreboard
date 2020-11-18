@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css">
     <style>
         .green{
             color: green;
@@ -11,15 +12,53 @@
     </style>
 </head>
 <body>
-    <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+    <!-- Here is the new design section -->
+    <!-- Main Background -->
+    <div class="bg">
+        <div class="container">
+            <div class="score-board">
+                <div class="score-card">
+                    <div class="img">
+                        <img src="./assets/favicon.png" alt="Player One">
+                    </div>
+                    <h1 class="lg-num"><span id="p1Display">0</span></h1>
+                    <div class="player-name p1name">Player One</div>
+                </div>
+                <p class="to">-</p>
+                <div class="score-card">
+                    <div class="img">
+                        <img src="./assets/favicon.png" alt="Player Two">
+                    </div>
+                    <h1 class="lg-num"><span id="p2Display">0</span></h1>
+                    <div class="player-name p2name">
+                        Player Two
+                    </div>
+                </div>
+            </div>
+            <p class="text">Playing to: <span>5</span></p>
+
+            <div class="input-board">
+                <input type="number" placeholder="Winning Point eg. 10">
+                <button id="p1"><span class="add1">+</span> Player One</button>
+                <button id="p2"><span class="add1">+</span> Player Two</button>
+            </div>
+            <button id="reset">RESET GAME</button>
+        </div>
+        <div class="footer">
+            <p>Built and Designed With ❤ by Chibuzor</p>
+        </div>
+    </div>
+
+    <!-- Ends Here -->
+    <!-- <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
 
     <p>Playing to: <span>5</span></p>
 
     <input type="number">
     <button id="p1">Player One</button>
     <button id="p2">Player Two</button>
-    <button id="reset">Reset</button>
+    <button id="reset">Reset</button> -->
 
-    <script src="app.js"></script>
+    <script src="./App/app.js"></script>
 </body>
 </html>
